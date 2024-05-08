@@ -4,6 +4,7 @@ from strings.symmetry import *
 from strings.reverse import *
 from strings.length_string import *
 from strings.length_without_spaces import *
+from strings.find_even_length_words import *
 
 welcome_message = """
 **      **  ********  **       **          **
@@ -40,6 +41,7 @@ for i in range(0,9999):
     print("3. Reverse String ")
     print("4. Length of a String ")
     print("5. Length of a String (EXCLUDING WHITE SPACES) ")
+    print("6. Even Length words in a String ")
     choice_input = input("Enter your choice: ")
     print('\n')
 
@@ -78,12 +80,20 @@ for i in range(0,9999):
         print('\n')
     
     elif choice_input == '5':
-        print('Option 4 Length of a given string (EXCLUDING WHITE SPACES) -->')
+        print('Option 5 Length of a given string (EXCLUDING WHITE SPACES) -->')
         word = input("Enter the string to get it's length :")
         lws = LengthWithoutSpaces(word)
         print(f"the entered string : {lws.get_word()}")
         len_without_spaces = lws.length_without_spaces()
         print(f"The length of the string is (EXCLUDING WHITE SPACES) : {len_without_spaces}")
+        print('\n')
+
+    elif choice_input == '6':
+        print('Option 6 Get the string that has even length -->')
+        word = input("Enter the string :")
+        few = FindEvenLengthWords(word)
+        print(f"the entered string : {few.get_word()}")
+        few.find_even_length_words()
         print('\n')
 
     elif choice_input == 'n' or choice_input == 'N':
