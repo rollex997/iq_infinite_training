@@ -1,5 +1,10 @@
+# String related imports
 from strings.palindrom import *
 from strings.symmetry import *
+from strings.reverse import *
+from strings.length_string import *
+from strings.length_without_spaces import *
+
 welcome_message = """
 **      **  ********  **       **          **
 **      **  **        **       **        **  **
@@ -32,6 +37,9 @@ for i in range(0,9999):
     print("--- String Section ---")
     print("1. Check Palindrome ")
     print("2. Check Symmetry ")
+    print("3. Reverse String ")
+    print("4. Length of a String ")
+    print("5. Length of a String (EXCLUDING WHITE SPACES) ")
     choice_input = input("Enter your choice: ")
     print('\n')
 
@@ -50,6 +58,32 @@ for i in range(0,9999):
         sm = Symmetry(word)
         print(f"The entered word is : {sm.get_ch_string()}")
         sm.check_symmetry()
+        print('\n')
+
+    elif choice_input == '3':
+        print('Option 3 Reverse the given string -->')
+        word = input("Enter the string to be reversed :")
+        rv = Reverse(word)
+        print(f"the entered string : {rv.get_word()}")
+        rv.reverse_word()
+        print('\n')
+
+    elif choice_input == '4':
+        print('Option 4 Length of a given string -->')
+        word = input("Enter the string to get it's length :")
+        len = Length(word)
+        print(f"the entered string : {len.get_word()}")
+        length = len.length_of_string()
+        print(f"The length of the string is : {length}")
+        print('\n')
+    
+    elif choice_input == '5':
+        print('Option 4 Length of a given string (EXCLUDING WHITE SPACES) -->')
+        word = input("Enter the string to get it's length :")
+        lws = LengthWithoutSpaces(word)
+        print(f"the entered string : {lws.get_word()}")
+        len_without_spaces = lws.length_without_spaces()
+        print(f"The length of the string is (EXCLUDING WHITE SPACES) : {len_without_spaces}")
         print('\n')
 
     elif choice_input == 'n' or choice_input == 'N':
