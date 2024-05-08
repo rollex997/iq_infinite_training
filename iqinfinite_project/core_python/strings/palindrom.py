@@ -9,6 +9,9 @@ Input:amaama
 Output:
 The entered string is symmetrical
 The entered string is palindrome
+
+A string is said to be symmetrical if both the halves of the string are the same and a string is said to be a palindrome string if 
+one half of the string is the reverse of the other half or if a string appears the same when read forward or backward
 '''
 # Palindrome : Solution
 
@@ -34,6 +37,6 @@ class Palindrome:
                 flag=1
                 break
         if flag==0:
-            print(f" The word '{word}' is a Palindrome ")
+            print(f"The word '{word}' is a Palindrome ")
         else:
-            print(f" the word '{word}' is not a Palindrome ")
+            print(f"The word '{word}' is not a Palindrome ")
