@@ -27,5 +27,6 @@ class Reverse:
         '''
         print(" ".join(l)) : Here, l is assumed to be a list of strings. The join() method is used to concatenate the elements of the list l into a single string, separated by the string " ".
         '''
-        print(" ".join(l))
+        print("\033[92mThe reversed string is : \033[97m")
+        print(f'\033[92m{" ".join(l)}\033[97m')
         

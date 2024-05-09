@@ -37,6 +37,6 @@ class Palindrome:
                 flag=1
                 break
         if flag==0:
-            print(f"The word '{word}' is a Palindrome ")
+            print(f"\033[92mThe word '{word}' is a Palindrome \033[97m")
         else:
-            print(f"The word '{word}' is not a Palindrome ")
+            print(f"\033[92mThe word '{word}' is not a Palindrome \033[97m")

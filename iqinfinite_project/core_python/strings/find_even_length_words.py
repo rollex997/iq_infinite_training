@@ -18,4 +18,4 @@ class FindEvenLengthWords:
     for i in s: 
       #checking the length of words
       if len(i)%2==0: 
-        print(f"Even length string : {i}")
+        print(f"\033[92mEven length string : {i}\033[97m")

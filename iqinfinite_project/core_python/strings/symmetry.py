@@ -40,6 +40,6 @@ class Symmetry:
                 flag=1
                 break
         if flag==0:
-            print(f"The word '{word}' is symmetrical")
+            print(f"\033[92mThe word '{word}' is symmetrical\033[97m")
         else:
-            print(f"The word '{word}' is not symmetrical")
+            print(f"\033[92mThe word '{word}' is not symmetrical\033[97m")
