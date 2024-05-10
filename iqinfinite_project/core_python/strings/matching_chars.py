@@ -26,27 +26,18 @@ class MatchingChar:
         self.__second_word = second_string
     def match_char(self):
         f_string = self.__first_word
-        s_string = self.__first_word
+        s_string = self.__second_word
         
         #first string
-        f_start = 0
         f_last = len(f_string)
 
         #second_string
-        s_start = 0
         s_last = len(s_string)
 
-        # l=[]
+        print(f"first string : {f_last}")
+        print(f"second string : {s_last}")
+
         count = 0
-        # for i in range(f_start, f_last):
-        #     for j in range(s_start, s_last):
-        #         if f_string[i] == s_string[j]:
-        #             # if not f_string[i] in l:
-        #             #     l.append(f_string[i])
-        #             #     count+=1
-                    
-        #             l.append(s_string[j])
-        #             count+=1
         common_chars = []
         for char1 in f_string:
             if char1 in s_string and char1 not in common_chars:
