@@ -34,7 +34,3 @@ class FindSpecialCharacters:
             'ch_count':character_count
         }
         return context
-        # if(regex.search(w_string) == None):
-        #     print("\033[92mString is accepted.\033[97m")
-        # else:
-        #     print("\033[92mString is not accepted.\033[97m")
